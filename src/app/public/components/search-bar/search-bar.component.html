@@ -1,0 +1,5 @@
+<form class="d-flex">
+    <input #wantedHero class="form-control me-2" type="search" placeholder="{{ 'Search' | translate }}"
+    (keyup.enter)="searchHero($event.target.value)">
+    <button (click)="searchHero(wantedHero.value)" class="btn btn-success" type="submit">{{ 'Search' | translate }}</button>
+</form>

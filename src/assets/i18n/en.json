@@ -1,0 +1,18 @@
+{
+    "List of heroes":"List of heroes",
+    "Hero successfully added": "Hero successfully added",
+    "Hero correctly edited":"Hero correctly edited",
+    "Hero successfully deleted":"Hero successfully deleted",
+    "Are you sure you want to eliminate the hero?":"Are you sure you want to eliminate the hero?",
+    "You must fill in all fields":"You must fill in all fields",
+    "Name":"Name",
+    "Year":"Year",
+    "Franchise":"Franchise",
+    "Search":"Search",
+    "Add Hero": "Add Hero",
+    "Edit Hero":"Edit Hero",
+    "Send":"Send",
+    "Edit":"Edit",
+    "Delete":"Delete",
+    "Cancel":"Cancel"
+}

@@ -1,0 +1,18 @@
+{
+    "List of heroes":"Listado de heroes",
+    "Hero successfully added": "Héroe agregado con éxito",
+    "Hero correctly edited": "Héroe editado correctamente",
+    "Hero successfully deleted":"Heroe borrado correctamente",
+    "Are you sure you want to eliminate the hero?":"¿Estás seguro de que quieres eliminar al heroe?",
+    "You must fill in all fields":"Debe rellenar todos los campos",
+    "Name":"Nombre",
+    "Year":"Año",
+    "Franchise":"Franquicia",
+    "Search":"Buscar",
+    "Add Hero": "Añadir heroe",
+    "Edit Hero":"Editar heroe",
+    "Send":"Enviar",
+    "Edit":"Editar",
+    "Delete":"Eliminar",
+    "Cancel":"Cancelar"
+}

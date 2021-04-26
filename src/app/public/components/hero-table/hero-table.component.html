@@ -1,0 +1,35 @@
+<table class="table table-striped table-bordered">
+    <thead class="thead-dark">
+      <tr class="table-dark">
+        <th scope="col" class="text-center">{{ 'Name' | translate }}</th>
+        <th scope="col" class="text-center">{{ 'Year' | translate }}</th>
+        <th scope="col" class="text-center">{{ 'Franchise' | translate }}</th>
+        <th scope="col" class="text-center">{{ 'Edit' | translate }}</th>
+        <th scope="col" class="text-center">{{ 'Delete' | translate }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let hero of heroes | paginate:  {itemsPerPage:5, currentPage:p}; let i = index;">
+        <td class="text-center">{{hero.name}}</td>
+        <td class="text-center">{{hero.year}}</td>
+        <td class="text-center">{{hero.franchise}}</td>
+        <td class="text-center"><button (click)="editHero(hero)" type="button" class="btn btn-sm btn-primary">{{ 'Edit' | translate }}</button></td>
+        <td class="text-center"><button (click)="openDeleteModal(hero)" type="button" class="btn btn-sm btn-danger">{{ 'Delete' | translate }}</button></td>
+      </tr>
+    </tbody>
+    <pagination-controls (pageChange)="p=$event"></pagination-controls>
+</table>
+<!-- Delete Modal -->
+<div class="row">
+  <modal #deleteModal>
+      <modal-content>
+        <span class="d-flex justify-content-center">
+          {{ 'Are you sure you want to eliminate the hero?' | translate }}
+        </span>
+        <div class="row d-flex justify-content-center mt-3">
+          <button class="btn btn-sm btn-danger mb-1" (click)="deleteHero()">{{ 'Delete' | translate }}</button>
+          <button class="btn btn-sm btn-primary" (click)="closeModal()">{{ 'Cancel' | translate }}</button>
+        </div>
+      </modal-content>
+  </modal>
+</div>`
